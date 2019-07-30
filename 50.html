@@ -1,0 +1,33 @@
+<script>
+ let person={
+   name :'w',
+   age:18,
+   weight:100,
+   bike:[{
+       D:'giant',
+       speed:10
+
+   },{
+       D2:'ubike',
+       speed:20
+
+   }],
+   eat:function(){
+       document.write("eating...");
+   }
+
+ }
+
+ let strJSON=JSON.stringify(person);
+ document.write(strJSON);
+ document.write("<hr>");
+
+let person2=JSON.person(strJSON);
+for(let key in person2){
+    document.write(key+":"+person[key]+"<br>");
+}
+
+
+person.eat.call(person2);
+ 
+</script>

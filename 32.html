@@ -1,0 +1,29 @@
+<script>
+    let counter=o;
+
+function start(){
+ setInterval(doTHindd,1*1000);
+
+}
+
+function doThing(){
+    document.getElementById('counter').innerHTML=counter++;
+}
+function zero(){
+ if(timer !=null){
+     clearInterval(timer);
+ }
+ counter=0;
+ document.getElementById('counter').innerHTML=++counter;
+ isRunning=false;
+}
+</script>
+
+    Timer:<span id='counter'>
+
+    <hr>
+    <input type="button" value="start" onclick=""/>
+    <input type="button"  value="pause" onclick=""/>
+    <input type="button"  value="Zero" onclick=""/>
+    
+</span>

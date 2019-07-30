@@ -1,0 +1,43 @@
+<script>
+let bike=new Object();
+document.write(typeof bike +"<br>");
+bike.upspeed=function(){
+  this.speed=this.speed == 0 ? 1 :this.speed*1.2;
+}
+
+bike.downSpeed =function(){
+    this.speed  = this.speed < 1 ? 0 :this.speed*0.7;
+}
+
+bike.upSpeed();bike.upSpeed();bike.upSpeed();bike.downSpeed();
+document.write(bike.speed+"<hr>");
+let bike2 ={
+ speed : 0 ;
+ gear :1 ;
+ upSpeed ;function(){
+     this.speed=this.speed<1?1:this.speed*1.2;
+ },
+ downSpeed:function(){
+    this.speed  = this.speed < 1 ? 0 :this.speed*0.7;
+ }
+
+ 
+
+};
+
+for(let key in bike2){
+
+  document.write(key + "=>"+bike2[key]+"<br>");
+
+}
+ document.write("<hr>");
+  
+ for(let key in document){
+  document.write(key + "=>"+document[key]+"<br>");
+
+ }
+
+
+</script>
+
+

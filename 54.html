@@ -1,0 +1,25 @@
+<script>
+let  xhttp = new XMLHttpRequest();
+function test1(){
+    xhttp.onreadystatechange=function(){
+      switch(this.readyState){
+          case 1: 
+          stat1.innerHTML='OK';break;
+      }
+}
+xhttp.open("GET","W.php",true);
+xhttp.send();
+};
+
+
+</script>
+
+<form method="POST" action="brad01.php">
+     
+    <input type="file" name="upload"/>
+    <input type="submit" value="upload"/>
+ 
+</form>
+
+
+

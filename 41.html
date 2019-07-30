@@ -1,0 +1,48 @@
+<h1 id='head'></h1>
+<hr>
+<canvas id='canvas' width='480' height='320'
+    style="border:1px solid black" ></canvas>
+</canvas>
+
+<script>
+ head.innerHTML='cy';
+ let ctx=canvas.getContext('2d');
+ctx.strockStyle='rgb(0,0,255)';
+
+ctx.lineTO(100,100);
+ctx.stroke();
+
+canvas.onmousedown=function(){
+    isDrag=true;
+    ctx.bedinPath();
+    ctx.moveTo(10,10);
+  
+}
+canvas.onmouseup=function(){
+    isDrag=false;
+}
+canvas.onmouseup=function(){
+    if(!isDrag) return;
+    console.log('drag'+.offsetX+"x"+"x"+e.offsetY);
+
+}
+
+ball.onload=function(){
+    ctx.drawImage(ball,ballX,100);
+}
+ 
+function clear(){
+    ctx.clearRect(0,0,480,320);
+}
+
+function moveLeft(){
+
+}
+let ball=new Image();
+    ball.src='ball.png';
+    ball.onload=function(){
+    ctx.drawImage(ball,200,200);
+}
+ 
+
+</script>

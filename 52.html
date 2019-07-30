@@ -1,0 +1,38 @@
+<script>
+   class Bike{
+       
+     constructor(speed){
+   document.write("bike()");
+    this.speed=speed;
+    this.name='';
+     }
+      upspeed(){
+        document.write("Bike:upSpeed()<br>");
+
+      }
+   }
+ class Scooter extends Bike {
+   chGear(gear){
+         document.write("Scotter:chGear");
+         this.gear=gear;
+       
+   }
+  upspeed(){
+      super.upspeed();
+      document.write("Scotter:upspeed()<br>");
+  }
+
+ }
+   let b1 = new Bike(123);
+    b1.upspeed();
+    document.write(b1.speed + "<hr>");
+    let s1=new Scooter(234);
+    s1.upspeed();
+    document.write(s1.speed+"<hr>");
+    document.write("<br>");
+    Bike.m1();
+    
+
+    
+
+</script>

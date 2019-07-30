@@ -1,0 +1,23 @@
+<script src="www.js"></script>
+ <script>
+    function checked(){
+       let mesg=document.getElementById('mesg')
+       let id= document.getElementById('id').value;
+       mesg.innerHTML=checkTWID(id)?'':'ID ERROR!';
+    }
+
+
+ </script>
+<form>
+ name:<input type="text"/><br>
+ ID:<input type="text" onblur="checkID()"/><br>
+ <span id="mesg"></span><br>
+ Gender:<input type="radio" name="Gender" checked/>Male
+ <input type="radio" name="gender"/>Female
+
+
+</form>
+
+
+    
+ 

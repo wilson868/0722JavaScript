@@ -1,0 +1,28 @@
+<script>
+let body =document.body;
+
+let header =document.createElement('h1')
+header.innerHTML="CY"
+body.appendChild(header);
+
+let hr =document.createElement('hr');
+body.appendChild(hr);
+
+let table=document.createElement('table');
+table.setAttribute('border','1');
+table.setAttribute('width','100%');
+
+for (let k=0; k<2;k++){
+ let tr=document.createComment('tr');
+ table.appendChild(tr);
+ for (let i=2; i<=5 ;i++){
+
+    let td =document.createElement('td');
+    tr.appendChild(td);
+    for(let j=1; j<=9;j++)
+    td.innerHTML+=`${i}X ${j}=${newi*j}<br>`;
+
+ }
+
+}
+</script>
